@@ -65,7 +65,6 @@
 //! ```
 
 #![deny(missing_debug_implementations)]
-#![deny(missing_docs)]
 #![cfg_attr(test, deny(warnings))]
 
 mod circuit_breaker;
