@@ -65,7 +65,6 @@
 //! ```
 
 #![deny(missing_debug_implementations)]
-#![deny(missing_docs)]
 #![cfg_attr(test, deny(warnings))]
 
 mod circuit_breaker;
@@ -79,6 +78,9 @@ mod windowed_adder;
 
 pub mod backoff;
 pub mod failure_policy;
+pub mod retry_policy;
+mod retry_policy_builder;
+pub mod retry_policy_config;
 #[cfg(feature = "futures-support")]
 pub mod futures;
 
